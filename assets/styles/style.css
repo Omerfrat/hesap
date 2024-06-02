@@ -1,0 +1,412 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Fira Code", monospace;
+  background-color: #3A4663
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  color: #FFFFFF;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
+.container-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.header-dark {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hsp {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-family: League Spartan;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29.44px;
+  letter-spacing: -0.5333333611488342px;
+  text-align: center;
+}
+
+.logo.dark h1 {
+  color: #FFFFFF;
+}
+
+.theme {
+  display: flex;
+  align-items: end;
+  gap: 26px;
+}
+
+.theme-tag {
+  width: 71px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.theme h1 {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11.04px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.theme-tag label {
+  width: 71px;
+  height: 26px;
+  background-color: #242D44;
+  border: none;
+  border-radius: 25px;
+}
+.header-dark .theme-tag p {
+  color: #FFFFFF;
+}
+
+/* label p.1 span {
+  width: 16px;
+  height: 16px;
+  background-color: #D03F2F;
+} */
+
+.govde-dark {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.govde-hesap {
+  width: 540px;
+  background-color: #181F33;
+  text-align: end;
+  padding: 10px 15px 10px 0 ;
+  border-radius: 10px;
+  min-height: 104px;
+}
+
+.govde-hesap h1 {
+  font-size: 56px;
+}
+
+.container-dark .govde-tus-cek button {
+  color: #36362C;
+}
+
+.govde-tus {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 32px 32px 32px 30px;
+  column-gap: 24px;
+}
+.govde-dark .govde-tus {
+  background-color: #181F33;
+}
+
+.govde-tus-cek {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 25px;
+}
+
+.govde-tus-cek button {
+  width: 101px;
+  text-align: center;
+  color: #434A59;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #EAE3DC;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0px -4px 0px 0px #B3A497 inset;
+}
+
+.govde-tus-alt {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  padding-top: 24px;
+}
+ .govde-tus-alt button {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 29px 11px 32px;
+  color: #FFFFFF;
+}
+.container-dark button.blue {
+  color: #FFFFFF;
+  background-color: #647198;
+  box-shadow: 0px -4px 0px 0px #414E73 inset;
+}
+
+.container-dark button.red {
+  color: #FFFFFF;
+  background-color: #D03F2F;
+  box-shadow: 0px -4px 0px 0px #93261A inset;
+}
+
+/* active durumları css başlangıç */
+
+.container-dark .govde-tus-cek button:hover {
+  background-color: #FFFFFE;
+}
+
+.container-dark button.blue:hover {
+  background-color: #A2B2E1;
+}
+.container-dark button.red:hover {
+  background-color: #F96B5B;
+}
+
+
+/* light tema başlangıc */
+
+
+.container-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #E6E6E6;
+}
+
+.container-light .theme-tag p  {
+  color: #36362C;
+}
+.container-light .theme-tag label {
+  background-color: #D2CDCD;
+}
+
+.header-light {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo.light h1 {
+  color: #36362c;
+}
+
+.header-light .theme h1, .theme-tag p {
+  color: #36362C;
+}
+
+.govde-light {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.govde-light .theme-tag label {
+  background-color: #D2CDCD;
+}
+.govde-light .govde-hesap {
+  background-color: #EEEEEE;
+}
+.govde-light .govde-hesap h1 {
+  color: #36362C;
+}
+
+.govde-light .govde-tus {
+  background-color: #D2CDCD;
+}
+.govde-light .govde-tus-cek button {
+  color: #36362C;
+  background-color: #E5E4E1;
+  box-shadow: 0px -4px 0px 0px #A79E91 inset;
+}
+
+.container-light .govde-light button.blue {
+  color: #FFFFFF;
+  background-color: #378187;
+  box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+
+.container-light .govde-light button.red {
+  color: #FFFFFF;
+  background-color: #C85402;
+  box-shadow: 0px -4px 0px 0px #873901 inset;
+}
+
+/* light tema actice */
+
+.container-light .govde-tus-cek button:hover {
+  background-color: #FFFFFE;
+}
+
+.container-light button.blue:hover {
+  background-color: #62B5BC;
+}
+.container-light button.red:hover {
+  background-color: #FF8A38;
+}
+
+
+/* speys tema başlangıç */
+
+.container-speys {
+  background-color: #17062A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+.header-speys {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-speys .theme-tag label {
+  background-color: #1E0936;
+}
+
+.container-speys h1, .theme-tag p, .govde-tus button {
+  color: #FFE53D;
+}
+
+.govde-speys {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.govde-speys .govde-hesap, .govde-tus{
+  background-color: #1E0936;
+}
+
+.container-speys .govde-tus button {
+  background-color:  #331C4D;
+  box-shadow: 0px -4px 0px 0px #881C9E inset;
+}
+.container-speys button.blue {
+  color: #FFFFFF;
+}
+.container-speys button.red {
+  background: #00DED0;
+  box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+  color: #1A2327;
+}
+/* speys tema active */
+
+.container-speys .govde-tus-cek button:hover {
+  background-color: #6C34AC;
+}
+
+.container-speys button.blue:hover {
+  background-color: #8631AF;
+}
+.container-speys button.red:hover {
+  background-color: #93FFF8;
+  ;
+}
+
+
+@Media ( width <= 375px ) {
+  .container-dark {
+    width: 100%;
+  }
+  .header-dark, .header-light, .header-speys {
+    width: 320px;
+  }
+
+  .govde-dark, .govde-light, .govde-speys {
+    width: 327px;
+  }
+  .govde-hesap {
+    width: 327px;
+    padding: 29px 24px 22px 0;
+  }
+  .govde-hesap h1 {
+    font-size: 40px;
+  }
+  .govde-tus {
+    width: 100%;
+    column-gap: 13px;
+    padding: 24px;
+  }
+  .govde-tus-cek {
+    width: 100%;
+    gap: 13px;
+    grid-template-columns:repeat(4, 60px);
+  }
+  .govde-tus-cek button {
+    width: 60px;
+    font-size: 32px;
+  }
+  .govde-tus-alt {
+    gap: 13px;
+    padding-top: 13px;
+  }
+  .govde-tus-alt  button{
+    width: 133px;
+  }
+}
